@@ -18,10 +18,10 @@ public class Javafxapp extends Application {
 
     public class Javafx extends Application {
  
-   private static final int ADJUST_TYPE_HUE = 1;
-   private static final int ADJUST_TYPE_CONTRAST = 2;
-   private static final int ADJUST_TYPE_SATURATION = 3;
-   private static final int ADJUST_TYPE_BRIGHTNESS = 4;
+   private static final int ADJUST_TYPE_q;
+   private static final int ADJUST_TYPE_panier;
+   private static final int ADJUST_TYPE_validation;
+   private static final int ADJUST_TYPE_payment;
  
    private ColorAdjust colorAdjust;    
 
