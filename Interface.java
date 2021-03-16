@@ -15,6 +15,17 @@ public class Javafxapp extends Application {
     public static void main(String []args){
     launch(args);
     }
+   
+    public class Javafx extends Application {
+ 
+   private static final int ADJUST_TYPE_HUE = 1;
+   private static final int ADJUST_TYPE_CONTRAST = 2;
+   private static final int ADJUST_TYPE_SATURATION = 3;
+   private static final int ADJUST_TYPE_BRIGHTNESS = 4;
+ 
+   private ColorAdjust colorAdjust;    
+
+
 
  
     @Override 
