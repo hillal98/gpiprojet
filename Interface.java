@@ -31,15 +31,15 @@ public class Javafxapp extends Application {
      @Override
    public void start(Stage stage) {
  
-      Label contrastLabel = new Label("Contrast:");
-      Label hueLabel = new Label("Hue:");
-      Label saturationLabel = new Label("Saturation:");
-      Label brightnessLabel = new Label("Brightness:");
+      Label panierLabel = new Label("ajoute d panier:");
+      Label qLabel = new Label("quqntite:");
+      Label validationLabel = new Label("validation:");
+      Label paymentLabel = new Label("payment:");
  
-      Slider contrastSlider = this.createSlider(ADJUST_TYPE_CONTRAST);
-      Slider hueSlider = this.createSlider(ADJUST_TYPE_HUE);
-      Slider saturationSlider = this.createSlider(ADJUST_TYPE_SATURATION);
-      Slider brightnessSlider = this.createSlider(ADJUST_TYPE_BRIGHTNESS);
+      Slider panierSlider = this.createSlider(ADJUST_TYPE_CONTRAST);
+      SliderqSlider = this.createSlider(ADJUST_TYPE_HUE);
+      Slider validationSlider = this.createSlider(ADJUST_TYPE_SATURATION);
+      Slider paymentSlider = this.createSlider(ADJUST_TYPE_BRIGHTNESS);
  
       String imageUrl = "//o7planning.org/templates/o7planning/resources/images/favi.png";
       Image image = new Image(imageUrl);
