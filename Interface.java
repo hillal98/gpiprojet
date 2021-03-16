@@ -15,7 +15,7 @@ public class Javafxapp extends Application {
     public static void main(String []args){
     launch(args);
     }
-   
+
     public class Javafx extends Application {
  
    private static final int ADJUST_TYPE_HUE = 1;
@@ -28,29 +28,42 @@ public class Javafxapp extends Application {
 
 
  
-    @Override 
-    public void start(Stage primaryStage) throws Exception {
-         primaryStage.setTitle("editeur d'image");
-         BorderPane borderPaneRoot =new BorderPane();
-         Scene scene=new scene (borderPaneRopt,800,600);
-         primaryStage.setScene(scene);
-         
-         HBox hBox1=new HBox();
-         hBox1.setPandding(new Insets(10));
-         hBox1.setSpacing(10);
-         Label labelNom=new Label("editeur d'image:");
-         labelNom.setPandding(new Insets(5));
-         TextField textFieldNom=new TextField();
-         Button buttonAdd=new Button ("ajouter");
-         hBox1.getChildren().addAll(labelNom,textFieldNom,buttonAdd);
-        
-         VBox vBox1=new VBox();
-         ListView<String>listView1=new ListView<>();
-         listView1.getItems().addALL("effet","flou");
-         vBox1.getChildren().add(listView1);
-         borderPaneRoot.setCenter(vBox1);
+     @Override
+   public void start(Stage stage) {
+ 
+      Label contrastLabel = new Label("Contrast:");
+      Label hueLabel = new Label("Hue:");
+      Label saturationLabel = new Label("Saturation:");
+      Label brightnessLabel = new Label("Brightness:");
+ 
+      Slider contrastSlider = this.createSlider(ADJUST_TYPE_CONTRAST);
+      Slider hueSlider = this.createSlider(ADJUST_TYPE_HUE);
+      Slider saturationSlider = this.createSlider(ADJUST_TYPE_SATURATION);
+      Slider brightnessSlider = this.createSlider(ADJUST_TYPE_BRIGHTNESS);
+ 
+      String imageUrl = "//o7planning.org/templates/o7planning/resources/images/favi.png";
+      Image image = new Image(imageUrl);
+ 
+      ImageView imageView = new ImageView(image);
 
-         borderPaneRoot.setTop(hBox1);
-         primaryStage.show();
+         // Create the ColorAdjust
+      colorAdjust = new ColorAdjust();
+ 
+      // Applying ColorAdjust effect to the ImageView node
+      imageView.setEffect(colorAdjust);
+ 
+      VBox root = new VBox();
+      root.setPadding(new Insets(10));
+ 
+      root.getChildren().addAll(contrastLabel, contrastSlider, //
+            hueLabel, hueSlider, //
+            saturationLabel, saturationSlider, //
+            brightnessLabel, brightnessSlider, imageView);
+ 
+      Scene scene = new Scene(root, 450, 320);
+      stage.setTitle("JavaFX ColorAdjust Effect (o7planning.org)");
+      stage.setScene(scene);
+      stage.show();
     }
+  }
   }
