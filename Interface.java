@@ -64,6 +64,8 @@ public class Javafxapp extends Application {
       stage.setTitle("JavaFX ColorAdjust Effect (o7planning.org)");
       stage.setScene(scene);
       stage.show();
+      //new push
     }
+
   }
   }
