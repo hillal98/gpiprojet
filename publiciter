@@ -25,3 +25,13 @@ public class publicicite {
     }
     return false;
   }
+ static void afficher() {
+    System.out.println("");
+    System.out.println("VOILA LA LISTE DES pibliciter  : ");
+    System.out.println("");
+
+    for (int i = 0; i < Publiciter.size(); i++) {
+      Publiciter.get(i).getId());
+    }
+
+  }
