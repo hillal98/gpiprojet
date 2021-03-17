@@ -1,0 +1,27 @@
+import java.util.*;
+
+public class publicicite {
+
+  static ArrayList<publiciter> publiciter = new ArrayList<publiciter>();
+
+
+
+  static void publicicite(int id1, int id2) {
+    if (exist(id1) && exist(id2)) {
+      publiciter m = new publiciter(nom , id);
+      
+    }
+    else
+      System.out.println("identifiants est incorrecte !");
+
+  }
+
+  static boolean exist(int ident) {
+    for (int i = 0; i < publiciter.size(); i++) {
+      if (publiciter.get(i).getId() == ident) {
+        return true;
+      }
+
+    }
+    return false;
+  }
