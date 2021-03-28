@@ -84,11 +84,7 @@ CREATE TABLE `pub` (
   `state` text NOT NULL,
   `date` date NOT NULL,
   `client` text NOT NULL,
-  `category` text NOT NULL,
-  `cataloge` text NOT NULL,
-  `age1` int(11) NOT NULL,
-  `age2` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  
 
 --
 -- Dumping data for table `pub`
