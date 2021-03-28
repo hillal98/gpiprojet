@@ -78,7 +78,7 @@ public class RegisterController {
 	    		}
 	    	});
 	    	signup.setOnAction(event->{
-			// manque d'un ! avant email.gettext()
+			
 	    		
 	    		if (!email.getText().equals(emailcomfiramtion.getText()) || email.getText().isEmpty())
 	    		{
