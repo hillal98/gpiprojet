@@ -64,7 +64,7 @@ CREATE TABLE `article` (
 INSERT INTO `article` (`id`, `name`, `price`, `descr`, `quantity`) VALUES
 (1, 'Une trousse perceuse / tournevis.', '20', 'Description', 5),
 (2, 'Des ciseaux.', '10', 'Des ciseaux.\r\n', 10),
-(3, 'Une rÃ¨gle.', '5', 'Une rÃ¨gle.\r\n', 25),
+(3, 'Une rÃ¨gle.', '5', 'Une rÃ¨gle.\r\n', 24),
 (4, 'Des grattoirs et spatules.', '30', 'Des grattoirs et spatules.\r\n', 15),
 (5, 'Un petit ensemble de peinture.', '50', 'Un petit ensemble de peinture.\r\n', 30),
 (7, 'Une ponceuse + du papier de verre.	', '10', 'Une ponceuse + du papier de verre.	', 55);
