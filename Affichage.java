@@ -10,8 +10,7 @@ import javax.swing.JPanel;
 import groupesourire.objets.Bloc;
 import groupesourire.objets.Deplacement;
 import groupesourire.objets.Bouton;
-//***** La classe Affichage est le classe la plus importante de l'application. *****//
-//***** Elle est accessible par toutes les autres classes, contient le "moteur" de l'application *****//
+
 
 
 //***** La classe Affichage est le classe la plus importante de l'application. *****//
